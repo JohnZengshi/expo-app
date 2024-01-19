@@ -1,4 +1,4 @@
-rootProject.name = 'expo-test2'
+rootProject.name = 'expo-app'
 
 dependencyResolutionManagement {
   versionCatalogs {
