@@ -1,7 +1,7 @@
 /*
  * @LastEditors: John
  * @Date: 2024-01-19 10:46:20
- * @LastEditTime: 2024-01-22 17:41:50
+ * @LastEditTime: 2024-01-22 19:14:18
  * @Author: John
  */
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
@@ -11,12 +11,7 @@ import { baseFont } from "../constants";
 import { BottomTabScreenProps } from "@react-navigation/bottom-tabs";
 import { useNavigation } from "@react-navigation/native";
 import { HomeTabParamList, RootStackParamList } from "../type";
-/*
- * @LastEditors: John
- * @Date: 2024-01-19 10:46:20
- * @LastEditTime: 2024-01-22 11:53:33
- * @Author: John
- */
+import styled from "styled-components/native";
 
 export default function (
   props: BottomTabScreenProps<HomeTabParamList, "Home">
@@ -30,13 +25,29 @@ export default function (
     <>
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
         <Text style={{ fontFamily: baseFont }}>Home Screen</Text>
-        <Pressable
+        <CustomPressable
           onPress={() => navigation.navigate("Details", { count: bears })}
         >
           <Text>Go to Details</Text>
-        </Pressable>
+        </CustomPressable>
         <Text style={{ fontFamily: baseFont }}>bears is : {bears}</Text>
       </View>
     </>
   );
 }
+
+const CustomPressable = styled(Pressable)`
+  /* 矩形 2 */
+
+  width: 668.18px;
+  height: 59.57px;
+  border-radius: 4.73px;
+  opacity: 1;
+
+  background: #f58c00;
+
+  box-sizing: border-box;
+  border: 0.95px solid #f58c00;
+
+  /* box-shadow: 0px 9.46px 94.64px -17px #633800; */
+`;
