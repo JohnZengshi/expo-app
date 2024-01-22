@@ -1,7 +1,7 @@
 /*
  * @LastEditors: John
  * @Date: 2024-01-19 09:45:34
- * @LastEditTime: 2024-01-22 15:48:39
+ * @LastEditTime: 2024-01-22 17:20:01
  * @Author: John
  */
 import { NavigationContainer, useNavigation } from "@react-navigation/native";
@@ -24,6 +24,7 @@ import Mine from "./src/pages/Mine";
 import CustomHead from "./src/components/CustomHead";
 import CustomTab from "./src/components/CustomTab";
 import Home from "./src/pages/Home";
+import { StatusBar } from "expo-status-bar";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 const Tab = createBottomTabNavigator<HomeTabParamList>();
@@ -50,7 +51,7 @@ export default function App() {
           <Stack.Screen
             name="Index"
             options={{
-              header: () => <></>,
+              header: () => <>{/* <Text>custom head</Text> */}</>,
             }}
           >
             {() => {

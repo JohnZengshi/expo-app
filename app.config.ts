@@ -1,7 +1,7 @@
 /*
  * @LastEditors: John
  * @Date: 2024-01-22 15:55:09
- * @LastEditTime: 2024-01-22 16:22:41
+ * @LastEditTime: 2024-01-22 16:26:00
  * @Author: John
  */
 module.exports = {
@@ -32,4 +32,9 @@ module.exports = {
     favicon: "./assets/favicon.png",
   },
   plugins: ["expo-font"],
+  extra: {
+    eas: {
+      projectId: "837d9d30-3f12-47f3-96a1-85276d2cef6d",
+    },
+  },
 };

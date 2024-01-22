@@ -6,7 +6,9 @@
     "start": "expo start",
     "start:g": "expo start -g",
     "android": "expo run:android",
+    "android:r": "expo run:android --variant release",
     "ios": "expo run:ios",
+    "ios:r": "expo run:ios --configuration Release",
     "web": "expo start --web"
   },
   "dependencies": {

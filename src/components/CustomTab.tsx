@@ -1,6 +1,6 @@
 import { BottomTabScreenProps } from "@react-navigation/bottom-tabs";
 import { useNavigation } from "@react-navigation/native";
-import { Button, View } from "react-native";
+import { Button, Pressable, View, Text } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { HomeTabParamList } from "../type";
 
@@ -26,19 +26,21 @@ export default function () {
             flexDirection: "row",
           }}
         >
-          <Button
-            title="Home Page"
+          <Pressable
             onPress={() => {
               navigation.navigate("Home");
             }}
-          ></Button>
+          >
+            <Text>Home Page</Text>
+          </Pressable>
 
-          <Button
-            title="Details Page"
+          <Pressable
             onPress={() => {
               navigation.navigate("Mine");
             }}
-          ></Button>
+          >
+            <Text>Details Page</Text>
+          </Pressable>
         </View>
       </View>
     </>
