@@ -5,10 +5,10 @@
  * @Author: John
  */
 module.exports = {
-  name: "expo-app",
+  name: "neer-app",
   version: process.env.MY_CUSTOM_PROJECT_VERSION || "1.0.0",
   // All values in extra will be passed to your app.
-  slug: "expo-app",
+  slug: "neer-app",
   orientation: "portrait",
   icon: "./assets/icon.png",
   userInterfaceStyle: "light",
@@ -26,7 +26,7 @@ module.exports = {
       foregroundImage: "./assets/adaptive-icon.png",
       backgroundColor: "#ffffff",
     },
-    package: "com.johnzeng2gmail.expotest2",
+    package: "com.johnzeng2gmail.neerApp",
   },
   web: {
     favicon: "./assets/favicon.png",

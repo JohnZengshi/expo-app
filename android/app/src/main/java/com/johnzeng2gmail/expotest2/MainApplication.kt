@@ -1,4 +1,4 @@
-package com.johnzeng2gmail.expotest2
+package com.johnzeng2gmail.neerApp
 
 import android.app.Application
 import android.content.res.Configuration

@@ -1,4 +1,4 @@
-rootProject.name = 'expo-app'
+rootProject.name = 'neer-app'
 
 dependencyResolutionManagement {
   versionCatalogs {
