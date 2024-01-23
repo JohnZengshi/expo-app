@@ -1,7 +1,7 @@
 <!--
  * @LastEditors: John
  * @Date: 2024-01-18 18:05:50
- * @LastEditTime: 2024-01-23 09:56:49
+ * @LastEditTime: 2024-01-23 10:00:07
  * @Author: John
 -->
 ## 📝 Cli Notes
@@ -20,7 +20,7 @@
 - [状态管理✔](https://github.com/expo/examples/tree/master/with-zustand)
 - [i18n国际化](https://github.com/i18next/react-i18next/tree/master/example/v9.x.x/reactnative-expo)
 
-## dependencies:
+## dependencies（远程调试不需要）:
 - [java17](https://www.oracle.com/java/technologies/downloads/#java11-windows)
 - [Android Studio/emulator](https://developer.android.com/studio?hl=zh-cn)
 
